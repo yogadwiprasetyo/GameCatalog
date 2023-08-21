@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameCell" rowHeight="116" id="KGk-i7-Jjw" customClass="GameTableViewCell" customModule="Games">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fzo-kx-gJb">
+                        <rect key="frame" x="8" y="8" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="6G5-qf-Rff"/>
+                            <constraint firstAttribute="width" constant="100" id="Cgy-jk-4L4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tS-Y2-OSJ">
+                        <rect key="frame" x="115.99999999999999" y="8" width="44.333333333333329" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="684-W7-MZe">
+                        <rect key="frame" x="115.99999999999999" y="37" width="38.333333333333329" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0U9-Ob-aRE">
+                        <rect key="frame" x="116" y="92.666666666666671" width="15" height="14.666666666666671"/>
+                        <color key="tintColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="me8-0A-ft4"/>
+                            <constraint firstAttribute="width" constant="15" id="nbL-Ve-hca"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1G1-xQ-08P">
+                        <rect key="frame" x="133" y="93" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="684-W7-MZe" firstAttribute="leading" secondItem="fzo-kx-gJb" secondAttribute="trailing" constant="8" id="Bhj-vU-P8i"/>
+                    <constraint firstItem="1G1-xQ-08P" firstAttribute="top" secondItem="0U9-Ob-aRE" secondAttribute="top" id="BrD-Ak-305"/>
+                    <constraint firstItem="0U9-Ob-aRE" firstAttribute="bottom" secondItem="1G1-xQ-08P" secondAttribute="bottom" id="EO9-7G-ctI"/>
+                    <constraint firstItem="4tS-Y2-OSJ" firstAttribute="leading" secondItem="fzo-kx-gJb" secondAttribute="trailing" constant="8" id="Kw9-3V-diR"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="684-W7-MZe" secondAttribute="trailing" constant="8" id="Rww-TK-GBf"/>
+                    <constraint firstItem="fzo-kx-gJb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="SPc-2M-gNX"/>
+                    <constraint firstAttribute="bottom" secondItem="fzo-kx-gJb" secondAttribute="bottom" constant="8" id="VX0-Nw-smF"/>
+                    <constraint firstItem="0U9-Ob-aRE" firstAttribute="bottom" secondItem="fzo-kx-gJb" secondAttribute="bottom" id="WpJ-C3-Qhk"/>
+                    <constraint firstItem="fzo-kx-gJb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cIr-bk-oag"/>
+                    <constraint firstItem="4tS-Y2-OSJ" firstAttribute="top" secondItem="fzo-kx-gJb" secondAttribute="top" id="hNn-h8-llU"/>
+                    <constraint firstItem="684-W7-MZe" firstAttribute="top" secondItem="4tS-Y2-OSJ" secondAttribute="bottom" constant="8" id="id0-iL-DnH"/>
+                    <constraint firstItem="fzo-kx-gJb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="k9o-9B-b2j"/>
+                    <constraint firstItem="1G1-xQ-08P" firstAttribute="leading" secondItem="0U9-Ob-aRE" secondAttribute="trailing" constant="2" id="lxm-BL-xbg"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4tS-Y2-OSJ" secondAttribute="trailing" constant="8" id="r3t-IO-pem"/>
+                    <constraint firstItem="0U9-Ob-aRE" firstAttribute="leading" secondItem="fzo-kx-gJb" secondAttribute="trailing" constant="8" id="wuA-4E-gBE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="gameImage" destination="fzo-kx-gJb" id="qGV-ee-Cab"/>
+                <outlet property="gameName" destination="4tS-Y2-OSJ" id="Hz4-5s-OKy"/>
+                <outlet property="gameRating" destination="1G1-xQ-08P" id="bWq-aD-DCA"/>
+                <outlet property="gameReleaseDate" destination="684-W7-MZe" id="70j-0o-qRe"/>
+            </connections>
+            <point key="canvasLocation" x="-75" y="-11"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
