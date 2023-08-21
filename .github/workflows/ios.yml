@@ -15,4 +15,4 @@ jobs:
     - name: Select Xcode
       run: sudo Xcode-select -switch /Applications/Xcode_14.3.app/Contents/Developer
     - name: Build 
-      run: xcodebuild clean build -project GameCatalog.xcodeproj -scheme GameCatalog -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.4'
+      run: xcodebuild clean build -project GameCatalog/GameCatalog.xcodeproj -scheme GameCatalog -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.4'
